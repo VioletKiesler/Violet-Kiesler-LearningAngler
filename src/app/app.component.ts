@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Bird} from "./models/bird";
 import {NgForOf, NgIf} from "@angular/common";
+import {BirdListComponent} from "./bird-list/bird-list.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgForOf, NgIf],
+  imports: [RouterOutlet, NgForOf, NgIf, BirdListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

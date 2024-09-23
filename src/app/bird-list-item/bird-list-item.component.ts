@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Bird} from "../models/bird";
+import {BirdListComponent} from "../bird-list/bird-list.component";
 
 @Component({
   selector: 'app-bird-list-item',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './bird-list-item.component.css'
 })
 export class BirdListItemComponent {
-
+  @Input() display?: Bird;
 }
