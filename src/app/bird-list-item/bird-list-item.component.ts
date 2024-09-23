@@ -5,7 +5,9 @@ import {BirdListComponent} from "../bird-list/bird-list.component";
 @Component({
   selector: 'app-bird-list-item',
   standalone: true,
-  imports: [],
+  imports: [
+    BirdListComponent
+  ],
   templateUrl: './bird-list-item.component.html',
   styleUrl: './bird-list-item.component.css'
 })
