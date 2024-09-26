@@ -1,12 +1,14 @@
 import {Component, Input} from '@angular/core';
 import {Bird} from "../models/bird";
 import {BirdListItemComponent} from "../bird-list-item/bird-list-item.component";
+import {NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-bird-list',
   standalone: true,
   imports: [
-    BirdListItemComponent
+    BirdListItemComponent,
+    NgForOf
   ],
   templateUrl: './bird-list.component.html',
   styleUrl: './bird-list.component.css'
